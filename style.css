@@ -1,0 +1,826 @@
+:root {
+    --hijauemerald: #00200f;
+    --pink : #FF1493;
+    --bg : #000;
+    --shadow: 0 2px 2px rgba(0,0,0,0.5);
+    --hijau:#064e3b;
+    --bginfo: #F7E7CE; /* Warna champagne */
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 2000px;
+}
+
+.hero::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/Background.png);
+    background-position: center; /* Pastikan gambar berada di tengah */
+    background-repeat: no-repeat; /* Mencegah pengulangan */
+    background-size: cover; /* Pastikan gambar mencakup seluruh area */
+    z-index: -1;
+}
+
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero h1 {
+    font-family: 'Sacramento',cursive;
+    font-size: 4rem;
+    text-shadow: var(--shadow);
+}
+
+.hero h4 {
+    font-size: 1.6rem;
+    text-shadow: var(--shadow);
+}
+
+.hero p {
+    font-size: 1.4rem;
+    text-shadow: var(--shadow);
+}
+
+.hero a {
+    color: var(--hijauemerald);
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+    background-color:var(--hijauemerald);
+    color:white;
+
+}
+
+.hero-btn {
+    color: var(--hijauemerald);
+    background-color: white;
+    box-shadow: var(--shadow);
+    padding: 10px 20px;
+    border-radius: 8px; /* Biar sudutnya tumpul */
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: 1px solid var(--hijauemerald); /* Tambahin border */
+}
+
+.hero-btn:hover {
+    background-color: var(--hijauemerald);
+    color: white;
+    border: 1px solid #00200f; /* Biar berubah saat hover */
+}
+
+.home h2 ,.info h2, .story h2, .gallery h2, .gifts h2, .wedding-wish h2{
+    color: var(--hijau);
+    font-family: 'Sacramento',cursive;
+    font-size: 5rem;
+    text-shadow: var(--shadow);
+    font-weight: bold;
+
+}
+
+.home h3 {
+    color:#444;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    
+}
+
+.home p , .gallery p {
+    color: #666;;
+    font-size: 1.1rem;
+}
+
+.home .couple {
+    margin-top: 100px;
+}
+
+.home .couple h3 {
+    font-family: 'Sacramento';
+    font-size: 2.4rem;
+    color:var(--hijau);
+}
+
+.home .couple img {
+    width: 100%;
+}
+
+.home{
+    background-image: url(img/bg3.png);
+    background-size: cover; /* Pastikan gambar mencakup seluruh area */
+    min-height: 100vh;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+/* .info {
+    background-color:var(--bg);
+    color:white;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+
+} */
+.info {
+    background-color: #f7e7ce; /* Warna champagne */
+    color: white;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    position: relative;
+}
+
+/* Dekorasi bunga */
+.info::before,
+.info::after {
+    content: "";
+    position: absolute;
+    background: url('img/bg1inf.png') no-repeat center center;
+    background-size: 150px; /* Bunga lebih kecil */
+    width: 180px;
+    height: 180px;
+    z-index: 0;
+    opacity: 80%; /* Lebih soft supaya teks tetap terbaca */
+}
+
+/* Bunga di pojok kiri atas */
+.info::before {
+    top: -50px;
+    left: -40px;
+    transform: rotate(-20deg);
+}
+
+/* Bunga di pojok kanan bawah */
+.info::after {
+    bottom: -50px;
+    right: -40px;
+    transform: rotate(20deg);
+}
+
+/* .info .alamat {
+    font-size: 1.1rem;
+}
+
+.info .card{
+background-color: rgba(255,255,255, 0.2)!important;
+color: white !important;
+border: 1px solid #999;
+}
+
+.info .card-header{
+    border: 1px solid #999;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.info .card-body {
+    font-size: 1rem;
+} */
+
+.info {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.info .alamat {
+    font-size: 1.2rem;
+    color :#000;
+    font-weight: 500;
+}
+
+.info .card {
+    background: rgba(255, 255, 255, 0.3); /* Lebih transparan biar elegan */
+    color: #444; 
+    border: 1px solid rgba(153, 153, 153, 0.6); 
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px); /* Efek blur kaca */
+    transition: transform 0.3s ease-in-out;
+}
+
+.info .card:hover {
+    transform: scale(1.05);
+}
+
+.info .card-header {
+    border-bottom: 1px solid rgba(153, 153, 153, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, rgba(0,100,0,0.2), rgba(192,192,192,0.2)); 
+    color: #2f4f4f;
+    padding: 10px;
+    border-radius: 12px 12px 0 0;
+}
+
+.info .card-body {
+    font-size: 1.1rem;
+    padding: 15px;
+    font-weight: 500;
+}
+
+
+.info .card {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Efek Bayangan untuk Header */
+.info h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Bayangan halus */
+    color: #2f4f4f;
+}
+
+/* Efek Animasi Bunga */
+.info::before,
+.info::after {
+    animation: floating 6s infinite ease-in-out;
+}
+
+/* Animasi Floating */
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+/* Efek Glow di Tombol */
+.info .btn {
+    background: #2f4f4f;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(47, 79, 79, 0.5); /* Glow effect */
+    transition: all 0.3s ease-in-out;
+}
+
+.info .btn:hover {
+    background: #1e3a3a;
+    box-shadow: 0 0 15px rgba(47, 79, 79, 0.8);
+    transform: scale(1.05);
+}
+
+/* Efek Hover Kartu Lebih Smooth */
+.info .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Tambahin Animasi pada Card */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.info .card {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+
+
+.story, .gifts {
+padding-top: 10rem;
+padding-bottom: 8rem;
+}
+
+.story p , .gifts p , .wedding-wish p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.timeline{
+    list-style: none;
+    padding: 1.4rem 0;
+    margin-top: 1rem;
+    position: relative; 
+}
+
+.timeline::before { 
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #ccc;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+.timeline li {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.timeline li ::before,
+.timeline li ::after {
+    content: '';
+    display: table;
+}
+
+.timeline li::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.timeline li .timeline-image{
+    width: 160px;
+    height: 160px;
+    background-color: #ccc;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.timeline li .timeline-panel{
+    width: 40%;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    position: relative;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+.timeline li .timeline-panel::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    top: 80px;
+    right: -15px;
+}
+
+.timeline li .timeline-panel::after{
+    content: '';
+    position: absolute;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    top: 81px;
+    right: -13px;
+}
+
+.timeline li.timeline-inverted .timeline-panel{
+    width: 40%;
+    float: right;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    position: relative;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-top: 15px;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before{
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after{
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+}
+
+
+.timeline li {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.timeline li.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline li .timeline-panel h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2f4f4f;
+}
+
+.timeline li .timeline-panel p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #555;
+}
+
+
+
+
+
+/* Delay biar muncul satu per satu */
+.timeline li:nth-child(1) { transition-delay: 0s; }
+.timeline li:nth-child(2) { transition-delay: 0.3s; }
+.timeline li:nth-child(3) { transition-delay: 0.6s; }
+.timeline li:nth-child(4) { transition-delay: 0.9s; }
+.timeline li:nth-child(5) { transition-delay: 1.2s; }
+
+/* Grid Galeri */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 0 20px;
+}
+
+/* Item Galeri */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+  
+  /* Animasi untuk efek slide-in dari kiri */
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .couple .col-lg-6 {
+    opacity: 0;
+    animation: slideInLeft 2s forwards;
+    animation-delay: 3s; /* Delay agar bagian kanan muncul sedikit lebih lama */
+  }
+  
+  .couple .col-lg-6:nth-child(2) {
+    animation: slideInRight 2s forwards;
+    animation-delay: 4s; /* Delay untuk bagian sebelah kanan */
+  }
+
+  html {
+    scroll-behavior: smooth;
+}
+
+.gift-container {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease-in-out, opacity 0.5s ease-in-out;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Efek smooth saat muncul */
+.gift-container.show {
+    max-height: 500px; /* Sesuaikan ukuran gambar */
+    opacity: 1;
+}
+
+/* Wrapper untuk gambar agar tombol tetap di dalam */
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* Styling gambar lebih tumpul */
+.rounded-card {
+    border-radius: 20px; /* Sudut lebih tumpul */
+    width: 100%;
+    max-width: 400px; /* Sesuaikan ukuran */
+    display: block;
+}
+
+/* Tombol salin responsif */
+.copy-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    padding: 9px 18px;
+    border-radius: 10px; /* Sudut lebih tumpul */
+    background-color: #28a745;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.copy-btn:hover {
+    background-color: #218838;
+}
+
+footer {
+    padding:3rem;
+    background-color: var(--hijauemerald);
+    color:#fff;
+}
+
+footer a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+    margin: 0.5rem;
+}
+
+.audio-icon-wrapper {
+    width: 4rem;
+    height: 5rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+@keyframes rotating {
+    from{
+        transform : rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Styling Card Container */
+.wish-card {
+    background: #fff;
+    padding: 25px;
+    text-align: center;
+}
+
+
+/* Styling Title & Subtitle */
+
+.wish-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Input dan Textarea Styling */
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+
+/* Tombol Kirim */
+.wish-btn {
+    background:var(--hijauemerald);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.wish-btn:hover {
+    background:var(--hijauemerald);
+    transform: scale(1.05);
+}
+
+/* Styling Komentar */
+.comments-container {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    background: #f9f9f9;
+    text-align: left;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.comment strong {
+    display: block;
+    font-size: 16px;
+    color:var(--hijau);
+}
+
+/* Styling Jika Belum Ada Komentar */
+.no-comments {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}
+
+
+
+
+/* media query */
+
+/* laptop */
+@media (max-width:992px){
+    html {
+        font-size: 75%;
+    }
+    .simply-countdown-circle > .simply-section{
+        padding: 70px;
+    }
+
+    .timeline::before{
+        left: 60px;
+    }
+
+    .timeline li .timeline-image{
+        left: 15px;
+        margin-left: 45px;
+        top: 5px;
+    }
+
+    .timeline li .timeline-panel{
+        width: calc((100% - 200px));
+        float: right;
+    }
+
+    .timeline li.timeline-inverted .timeline-panel{
+        width: calc((100% - 200px));
+        float: right;
+    }
+
+    .timeline li .timeline-panel::before{
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+
+    .timeline li .timeline-panel::after{
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -13px;
+        right: auto;
+    }
+
+}  
+/* tablet*/
+@media (max-width:768px){
+    html {
+        font-size: 65%;
+    }
+    .simply-countdown-circle > .simply-section{
+        padding: 60px;
+        margin: 5px;
+    }
+
+    .timeline li .timeline-image{
+        width: 140px;
+        height: 140px;
+    }
+
+    .timeline li .timeline-panel::before{
+        top: 50px;
+     }
+ 
+     .timeline li .timeline-panel::after{
+        top: 51px; 
+     }
+    
+}
+/* HP */
+@media (max-width:576px){
+    html {
+        font-size: 60%;
+    }
+    .simply-countdown-circle > .simply-section{
+        padding: 45px;
+        margin: 3px;
+    }
+
+    .timeline li .timeline-image{
+        width: 100px;
+        height: 100px;
+    }
+
+    .timeline li .timeline-panel{
+        width: 65%;
+        transform: translateX(-20px);
+    }
+
+    .timeline li.timeline-inverted .timeline-panel{
+        width: 65%;
+        transform: translateX(-20px);
+    }
+
+    .timeline li .timeline-panel::before{
+       top: 30px;
+    }
+
+    .timeline li .timeline-panel::after{
+       top: 31px; 
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Mengatur kolom lebih kecil di HP */
+        gap: 10px; /* Mengurangi jarak antar gambar */
+        padding: 0 10px;
+    }
+
+    .gallery-item {
+        border-radius: 8px; /* Sudut lebih halus */
+    }
+
+    .gallery-item img {
+        border-radius: 8px;
+    }
+
+    .copy-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .home .couple .col-lg-6:nth-child(2) { 
+        margin-top: 50px; /* Geser ke bawah */
+    }
+
+}
