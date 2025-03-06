@@ -748,35 +748,39 @@ footer li {
     html {
         font-size: 60%;
     }
-    /* Pastikan semua elemen sejajar dalam satu baris */
+    /* Pastikan countdown tetap di tengah */
     .simply-countdown-circle {
         display: flex;
-        flex-wrap: wrap; /* Supaya elemen turun ke bawah kalau tidak muat */
-        justify-content: center; /* Posisi tengah */
-        gap: 10px; /* Jarak antar elemen */
+        flex-wrap: wrap; /* Biar turun ke bawah jika tidak cukup */
+        justify-content: center; /* Posisi ke tengah */
+        gap: 10px; /* Beri jarak antar elemen */
+        max-width: 100%; /* Jangan melebihi lebar layar */
+        padding: 0 10px; /* Biar ada ruang di sisi layar */
     }
 
-    /* Styling untuk setiap lingkaran countdown */
+    /* Styling lingkaran countdown */
     .simply-countdown-circle > .simply-section {
-        width: 80px; /* Ukuran lingkaran */
-        height: 80px;
-        padding: 10px;
+        width: 75px; /* Ukuran lingkaran */
+        height: 75px;
+        padding: 15px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         text-align: center;
+        border-radius: 50%; /* Pastikan tetap bulat */
     }
 
-    /* Sesuaikan teks */
+    /* Ukuran angka dan teks */
     .simply-countdown-circle .simply-amount {
-        font-size: 1.6rem; /* Ukuran angka */
+        font-size: 1.5rem; /* Sesuaikan ukuran angka */
+        font-weight: bold;
     }
 
     .simply-countdown-circle .simply-word {
-        font-size: 0.9rem; /* Ukuran label */
+        font-size: 0.8rem; /* Sesuaikan ukuran label */
+        text-transform: uppercase;
     }
-
 
     .timeline li .timeline-image{
         width: 100px;
