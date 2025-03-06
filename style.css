@@ -11,7 +11,6 @@ body {
     font-size: 1.2rem;
     font-family: 'Work Sans', sans-serif;
     min-height: 2000px;
-    /* overflow-x: hidden; */
 }
 
 .hero::before{
@@ -136,37 +135,10 @@ body {
     padding-top: 10rem;
     padding-bottom: 8rem;
     position: relative;
-    overflow: visible;
     text-align: center;
     padding: 2rem 1rem;
 }
 
-/* Dekorasi bunga */
-.info::before,
-.info::after {
-    content: "";
-    position: absolute;
-    background: url('img/bg1inf.png') no-repeat center center;
-    background-size: 150px; /* Bunga lebih kecil */
-    width: 180px;
-    height: 180px;
-    z-index: 0;
-    opacity: 80%; /* Lebih soft supaya teks tetap terbaca */
-}
-
-/* Bunga di pojok kiri atas */
-.info::before {
-    top: -50px;
-    left: -40px;
-    transform: rotate(-20deg);
-}
-
-/* Bunga di pojok kanan bawah */
-.info::after {
-    bottom: -50px;
-    right: -40px;
-    transform: rotate(20deg);
-}
 
 /* .info .alamat {
     font-size: 1.1rem;
