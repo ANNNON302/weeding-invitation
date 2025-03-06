@@ -101,7 +101,7 @@ body {
 }
 
 .home .couple {
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .home .couple h3 {
@@ -135,9 +135,8 @@ body {
     padding-top: 10rem;
     padding-bottom: 8rem;
     position: relative;
-    text-align: center;
-    padding: 2rem 1rem;
 }
+
 
 
 /* .info .alamat {
@@ -160,10 +159,10 @@ border: 1px solid #999;
     font-size: 1rem;
 } */
 
-/* .info {
+.info {
     text-align: center;
     padding: 2rem 1rem;
-} */
+}
 
 .info .alamat {
     font-size: 1.2rem;
@@ -215,21 +214,6 @@ border: 1px solid #999;
     color: #2f4f4f;
 }
 
-/* Efek Animasi Bunga */
-.info::before,
-.info::after {
-    animation: floating 6s infinite ease-in-out;
-}
-
-/* Animasi Floating */
-@keyframes floating {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(10px);
-    }
-}
 
 /* Efek Glow di Tombol */
 .info .btn {
@@ -759,15 +743,15 @@ footer li {
     }
 
     .timeline li .timeline-panel{
-        width: 60%;
-        transform: translateX(-15px);
-        padding : 15px;
+        width: 65%;
+        transform: translateX(-20px);
+        padding: 15px;
     }
 
     .timeline li.timeline-inverted .timeline-panel{
-        width: 60%;
-        transform: translateX(-15px);
-        padding : 15px;
+        width: 65%;
+        transform: translateX(-20px);
+        padding: 15px;
     }
 
     .timeline li .timeline-panel::before{
@@ -801,14 +785,4 @@ footer li {
         margin-top: 50px; /* Geser ke bawah */
     }
 
-
-    .info::before {
-        top: -20px;
-        left: -10px;
-    }
-
-    .info::after {
-        bottom: -20px;
-        right: -10px;
-    }
 }
