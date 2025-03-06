@@ -783,13 +783,15 @@ footer li {
     }
 
     .timeline li .timeline-panel{
-        width: 65%;
-        transform: translateX(-20px);
+        width: 60%;
+        transform: translateX(-15px);
+        padding : 15px;
     }
 
     .timeline li.timeline-inverted .timeline-panel{
-        width: 65%;
-        transform: translateX(-20px);
+        width: 60%;
+        transform: translateX(-15px);
+        padding : 15px;
     }
 
     .timeline li .timeline-panel::before{
@@ -822,5 +824,3 @@ footer li {
     .home .couple .col-lg-6:nth-child(2) { 
         margin-top: 50px; /* Geser ke bawah */
     }
-
-}
