@@ -144,23 +144,23 @@ body {
     position: absolute;
     background: url('img/bg1inf.png') no-repeat center center;
     background-size: 150px; /* Bunga lebih kecil */
-    width: 100px;
-    height: 100px;
+    width: 180px;
+    height: 180px;
     z-index: 0;
     opacity: 80%; /* Lebih soft supaya teks tetap terbaca */
 }
 
 /* Bunga di pojok kiri atas */
 .info::before {
-    top: -40px;
-    left: -30px;
+    top: -50px;
+    left: -40px;
     transform: rotate(-20deg);
 }
 
 /* Bunga di pojok kanan bawah */
 .info::after {
-    bottom: -40px;
-    right: -30px;
+    bottom: -50px;
+    right: -40px;
     transform: rotate(20deg);
 }
 
@@ -823,5 +823,23 @@ footer li {
 
     .home .couple .col-lg-6:nth-child(2) { 
         margin-top: 50px; /* Geser ke bawah */
+    }
+
+    /* Mengurangi ukuran bunga dan memastikan tidak menyebabkan scroll ke samping */
+    .info::before,
+    .info::after {
+        background-size: 100px; /* Ukuran bunga lebih kecil */
+        width: 80px;
+        height: 80px;
+    }
+
+    .info::before {
+        top: -20px;
+        left: -10px;
+    }
+
+    .info::after {
+        bottom: -20px;
+        right: -10px;
     }
 }
