@@ -136,6 +136,9 @@ body {
     padding-top: 10rem;
     padding-bottom: 8rem;
     position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 2rem 1rem;
 }
 
 /* Dekorasi bunga */
@@ -185,11 +188,10 @@ border: 1px solid #999;
     font-size: 1rem;
 } */
 
-.info {
+/* .info {
     text-align: center;
     padding: 2rem 1rem;
-    overflow: hidden;
-}
+} */
 
 .info .alamat {
     font-size: 1.2rem;
