@@ -11,7 +11,7 @@ body {
     font-size: 1.2rem;
     font-family: 'Work Sans', sans-serif;
     min-height: 2000px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .hero::before{
@@ -136,7 +136,7 @@ body {
     padding-top: 10rem;
     padding-bottom: 8rem;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     text-align: center;
     padding: 2rem 1rem;
 }
