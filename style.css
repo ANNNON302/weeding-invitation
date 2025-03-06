@@ -750,8 +750,6 @@ footer li {
     }
     .simply-countdown-circle > .simply-section{
         padding: 20px;
-        margin: 2px;
-        display: flex;
     }
 
     .timeline li .timeline-image{
@@ -800,14 +798,6 @@ footer li {
 
     .home .couple .col-lg-6:nth-child(2) { 
         margin-top: 50px; /* Geser ke bawah */
-    }
-
-    /* Mengurangi ukuran bunga dan memastikan tidak menyebabkan scroll ke samping */
-    .info::before,
-    .info::after {
-        background-size: 100px; /* Ukuran bunga lebih kecil */
-        width: 80px;
-        height: 80px;
     }
 
     .info::before {
