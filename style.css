@@ -130,14 +130,47 @@ body {
 
 } */
 .info {
-    background-color: #f7e7ce; /* Warna champagne */
     color: white;
     padding-top: 10rem;
     padding-bottom: 8rem;
     position: relative;
+    text-align: center;
+    padding: 2rem 1rem;
+    
 }
 
+.rounded-card-a {
+    background-image: url('img/bgcam.png');
+    background-size: cover; /* Menyesuaikan gambar dengan area tanpa distorsi */
+    background-position: center; /* Posisi tengah gambar */
+    background-repeat: no-repeat; /* Agar tidak diulang */
+    
+    width: 100%;
+    max-width: 500px;
+    min-height: 500px; /* Pastikan tinggi cukup agar gambar tidak terpotong */
+    
+    border-radius: 40px; /* Membuat sudut membulat */
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
 
+.rounded-card-b {
+    background-image: url('img/bgcam.png');
+    background-size: cover; /* Menyesuaikan gambar dengan area tanpa distorsi */
+    background-position: center; /* Posisi tengah gambar */
+    background-repeat: no-repeat; /* Agar tidak diulang */
+    width: 100%;
+    max-width: 500px;
+    border-radius: 40px; /* Membuat sudut membulat */
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
 
 /* .info .alamat {
     font-size: 1.1rem;
@@ -158,11 +191,6 @@ border: 1px solid #999;
 .info .card-body {
     font-size: 1rem;
 } */
-
-.info {
-    text-align: center;
-    padding: 2rem 1rem;
-}
 
 .info .alamat {
     font-size: 1.2rem;
@@ -257,6 +285,16 @@ border: 1px solid #999;
 
 
 
+
+.story {
+    background-image: url('img/stbg.png'); /* Ganti dengan path gambar */
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+
 .story, .gifts {
 padding-top: 10rem;
 padding-bottom: 8rem;
@@ -325,6 +363,9 @@ padding-bottom: 8rem;
     border-radius: 8px;
     background-color: #fff;
     margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.85); /* Warna putih transparan */
+    border: 1px solid rgba(204, 204, 204, 0.5); /* Border lebih soft */
+    backdrop-filter: blur(5px); /* Efek blur */
 }
 
 .timeline li .timeline-panel::before{
@@ -411,6 +452,9 @@ padding-bottom: 8rem;
 .timeline li:nth-child(5) { transition-delay: 1.2s; }
 
 /* Grid Galeri */
+
+
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -568,6 +612,7 @@ footer li {
 }
 
 /* Styling Card Container */
+
 .wish-card {
     background: #fff;
     padding: 25px;
