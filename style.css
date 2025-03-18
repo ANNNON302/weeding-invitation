@@ -300,8 +300,8 @@ padding-top: 10rem;
 padding-bottom: 8rem;
 }
 
-.story p , .gifts p , .wedding-wish p{
-    font-size: 1rem;
+.story p , .gifts p , .wedding-wish p , .gallery p{
+    font-size: 1.2rem;
     font-weight: 300;
 }
 
@@ -378,6 +378,7 @@ padding-bottom: 8rem;
     border-bottom: 15px solid transparent;
     top: 80px;
     right: -15px;
+    
 }
 
 .timeline li .timeline-panel::after{
@@ -785,28 +786,20 @@ footer li {
     .timeline li .timeline-image{
         width: 100px;
         height: 100px;
-        margin-right: 20px;
-    }
-    .timeline-panel{
-        padding-left: 50px;
     }
 
-    .timeline li {
-        display: flex;
-        align-items: center;
-        gap: 15px; /* Beri jarak antar elemen */
-    }
     .timeline li .timeline-panel{
         width: 65%;
         transform: translateX(-20px);
         padding: 15px;
-        margin-left: 10px; /* Tambahkan margin ke kiri */
+        transform: none;
     }
 
     .timeline li.timeline-inverted .timeline-panel{
         width: 65%;
         transform: translateX(-20px);
         padding: 15px;
+        transform: none;
     }
 
     .timeline li .timeline-panel::before{
