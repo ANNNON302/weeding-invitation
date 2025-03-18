@@ -290,8 +290,6 @@ border: 1px solid #999;
     background-image: url('img/stbg.png'); /* Ganti dengan path gambar */
     background-size: cover;
     min-height: 100vh;
-    padding-top: 10rem;
-    padding-bottom: 5rem;
 }
 
 
