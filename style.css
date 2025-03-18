@@ -789,16 +789,14 @@ footer li {
 
     .timeline li .timeline-panel{
         width: 65%;
-        transform: translateX(-20px);
+        transform: translateX(5px);
         padding: 15px;
-        transform: none;
     }
 
     .timeline li.timeline-inverted .timeline-panel{
         width: 65%;
-        transform: translateX(-20px);
+        transform: translateX(5px);
         padding: 15px;
-        transform: none;
     }
 
     .timeline li .timeline-panel::before{
