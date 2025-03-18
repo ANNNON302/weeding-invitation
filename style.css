@@ -785,15 +785,22 @@ footer li {
     .timeline li .timeline-image{
         width: 100px;
         height: 100px;
-        margin-right: 50px;
+        margin-right: 20px;
     }
     .timeline-panel{
         padding-left: 50px;
+    }
+
+    .timeline li {
+        display: flex;
+        align-items: center;
+        gap: 15px; /* Beri jarak antar elemen */
     }
     .timeline li .timeline-panel{
         width: 65%;
         transform: translateX(-20px);
         padding: 15px;
+        margin-left: 10px; /* Tambahkan margin ke kiri */
     }
 
     .timeline li.timeline-inverted .timeline-panel{
