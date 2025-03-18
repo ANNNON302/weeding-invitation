@@ -787,7 +787,9 @@ footer li {
         height: 100px;
         margin-right: 50px;
     }
-
+    .timeline-panel{
+        padding: 15px;
+    }
     .timeline li .timeline-panel{
         width: 65%;
         transform: translateX(-20px);
