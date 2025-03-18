@@ -785,12 +785,14 @@ footer li {
     .timeline li .timeline-image{
         width: 100px;
         height: 100px;
+        margin-right: 50px;
     }
 
     .timeline li .timeline-panel{
         width: 65%;
         transform: translateX(-20px);
         padding: 15px;
+        margin-left: 70px;
     }
 
     .timeline li.timeline-inverted .timeline-panel{
