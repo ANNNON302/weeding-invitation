@@ -286,11 +286,13 @@ border: 1px solid #999;
 
 
 
-.story {
-    background-image: url('img/stbg.png'); /* Ganti dengan path gambar */
+/* .story {
+    background-image: url('img/stbg.png');
     background-size: cover;
     min-height: 100vh;
-}
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+} */
 
 
 .story, .gifts {
@@ -788,13 +790,13 @@ footer li {
     .timeline li .timeline-panel{
         width: 65%;
         transform: translateX(-20px);
-        padding: 20px;
+        padding: 15px;
     }
 
     .timeline li.timeline-inverted .timeline-panel{
         width: 65%;
         transform: translateX(-20px);
-        padding: 20px;
+        padding: 15px;
     }
 
     .timeline li .timeline-panel::before{
