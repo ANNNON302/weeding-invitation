@@ -300,8 +300,8 @@ padding-top: 10rem;
 padding-bottom: 8rem;
 }
 
-.story p , .gifts p , .wedding-wish p , .gallery p{
-    font-size: 1.2rem;
+.story p , .gifts p , .wedding-wish p{
+    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -378,7 +378,6 @@ padding-bottom: 8rem;
     border-bottom: 15px solid transparent;
     top: 80px;
     right: -15px;
-    
 }
 
 .timeline li .timeline-panel::after{
