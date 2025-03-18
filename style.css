@@ -788,13 +788,13 @@ footer li {
     .timeline li .timeline-panel{
         width: 65%;
         transform: translateX(-20px);
-        padding: 15px;
+        padding: 20px;
     }
 
     .timeline li.timeline-inverted .timeline-panel{
         width: 65%;
         transform: translateX(-20px);
-        padding: 15px;
+        padding: 20px;
     }
 
     .timeline li .timeline-panel::before{
