@@ -80,7 +80,7 @@ body {
     border: 1px solid #00200f; /* Biar berubah saat hover */
 }
 
-.home h2 ,.info h2, .story h2, .gallery h2, .gifts h2, .wedding-wish h2{
+.home h2 ,.info h2, .story h2, .gallery h2, .wedding-wish h2{
     color: var(--hijau);
     font-family: 'Sacramento',cursive;
     font-size: 5rem;
@@ -107,7 +107,7 @@ body {
 
 .home .couple h3 {
     font-family: 'Whisper',cursive;
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     color:var(--hijau);
     font-weight: bold;
 }
@@ -141,15 +141,6 @@ body {
     
 }
 
-.gifts {
-    color: white;
-    padding-top: 10rem;
-    padding-bottom: 8rem;
-    position: relative;
-    text-align: center;
-    padding: 2rem 1rem;
-    
-}
 
 .rounded-card-a {
     background-image: url('img/bgcam.png');
