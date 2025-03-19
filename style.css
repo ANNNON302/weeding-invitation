@@ -235,7 +235,7 @@ border: 1px solid #999;
 }
 
 /* Efek Bayangan untuk Header */
-.info h2 {
+.info h2 , .gifts h2{
     font-size: 5rem;
     font-weight: bold;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Bayangan halus */
@@ -789,13 +789,13 @@ footer li {
 
     .timeline li .timeline-panel{
         width: 65%;
-        transform: translateX(3px);
+        transform: translateX(2px);
         padding: 15px;
     }
 
     .timeline li.timeline-inverted .timeline-panel{
         width: 65%;
-        transform: translateX(3px);
+        transform: translateX(2px);
         padding: 15px;
     }
 
