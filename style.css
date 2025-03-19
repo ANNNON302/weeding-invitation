@@ -527,6 +527,9 @@ padding-bottom: 8rem;
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    flex-direction: column; /* Susun ke bawah */
+    align-items: center; /* Pusatkan elemen */
+    gap: 15px; /* Tambahkan jarak antar elemen */
 }
 
 /* Efek smooth saat muncul */
