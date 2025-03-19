@@ -34,9 +34,10 @@ body {
 }
 
 .hero h1 {
-    font-family: 'Sacramento',cursive;
+    font-family: 'Whisper',cursive;
     font-size: 4rem;
     text-shadow: var(--shadow);
+    font-weight: bold;
 }
 
 .hero h4 {
@@ -105,9 +106,10 @@ body {
 }
 
 .home .couple h3 {
-    font-family: 'Sacramento';
+    font-family: 'Whisper';
     font-size: 2.4rem;
     color:var(--hijau);
+    font-weight: bold;
 }
 
 .home .couple img {
@@ -301,7 +303,7 @@ padding-bottom: 8rem;
 }
 
 .story p , .gifts p , .wedding-wish p{
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
